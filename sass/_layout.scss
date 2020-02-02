@@ -1,0 +1,189 @@
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+/*---------- THIS IS THE LAYOUT SASS FILE ----------*/
+/*------ IT CONTAINS STYLES RELATED TO LAYOUT ------*/
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+
+/////////////////////////////////
+// HEADER
+
+.header {
+  display: flex;
+  flex-direction: column;
+
+  .overheader {
+    height: $height-overheader;
+    background-color: $color-dark;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60rem;
+  }
+}
+
+/////////////////////////////////
+// SECTIONS - GENERAL
+.first,
+.second,
+.third,
+.fourth,
+.fifth {
+  padding: $padding-section;
+  margin: $margin-section;
+}
+
+[class$='heading'] {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.4rem;
+}
+
+[class$='heading--number'] {
+  margin-left: $margin-number;
+  font-size: 2rem;
+  border-bottom: 2px solid $color-dark;
+}
+
+[class$='heading--text'] {
+  margin-left: 2.6rem;
+  font-size: $font-size-heading;
+}
+
+/////////////////////////////////
+// SECTION ONE - ABOUT ME
+
+.first {
+  margin-top: 1rem;
+
+  &__heading {
+    margin-bottom: 2.8rem;
+    &--number {
+      font-size: $font-size-number;
+    }
+
+    &--text {
+      font-size: $font-size-main-heading;
+    }
+  }
+
+  &__content {
+    margin-bottom: 2rem;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/////////////////////////////////
+// SECTIONS TWO, THREE & FOUR
+//            --
+// WORK EXPERIENCE & EDUCATION
+
+.work,
+.education {
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--main {
+      font-size: $font-size-title;
+    }
+
+    &--time {
+      font-weight: bold;
+    }
+  }
+}
+
+/////////////////////////////////
+// SECTIONS TWO & THREE
+//         --
+// WORK EXPERIENCE
+
+.work {
+  margin-bottom: 4rem;
+
+  &__title {
+    margin-bottom: 1.4rem;
+
+    &--main .joomla-blue {
+      color: $color-joomla;
+    }
+  }
+
+  &__content {
+    margin-left: 1.6rem;
+  }
+}
+
+/////////////////////////////////
+// SECTION FOUR - EDUCATION
+
+.education {
+  margin-bottom: 2.6rem;
+
+  &__content {
+    color: $color-school;
+    font-weight: bold;
+  }
+}
+
+/////////////////////////////////
+// SECTION FIVE - SKILLS
+
+.communication,
+.development,
+.music,
+.design {
+  display: flex;
+  margin-bottom: 6rem;
+}
+
+.development,
+.design {
+  flex-direction: row-reverse;
+}
+
+/////////////////////////////////
+// FOOTER
+
+.footer {
+  background-color: $color-dark;
+  color: $color-light;
+  display: flex;
+  justify-content: center;
+  padding: 6rem 14rem 4rem;
+
+  &__text {
+    margin-right: 6rem;
+
+    .thanks {
+      font-size: 3.6rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .outro {
+      margin-bottom: 1.4rem;
+    }
+
+    .bye {
+      margin-top: 1.4rem;
+      text-align: right;
+      font-size: 3.2rem;
+    }
+  }
+
+  .signature {
+    width: 16rem;
+    height: 16rem;
+  }
+}
