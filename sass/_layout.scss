@@ -23,7 +23,27 @@
   .main-header {
     display: flex;
     justify-content: space-between;
-    padding: 0 60rem;
+    padding: 0 30%;
+
+    @include responsive(desktop-standard) {
+      padding: 0 24%;
+    }
+
+    @include responsive(tablet-landscape) {
+      padding: 0 14%;
+    }
+
+    @include responsive(tablet-portrait) {
+      padding: 0 10%;
+    }
+
+    @include responsive(phone-big) {
+      padding: 0 6%;
+    }
+
+    @include responsive(phone) {
+      padding: 0 2%;
+    }
   }
 }
 
@@ -34,25 +54,54 @@
 .third,
 .fourth,
 .fifth {
-  padding: $padding-section;
-  margin: $margin-section;
+  padding: 0 32%;
+  margin: 8rem 0;
+
+  @include responsive(desktop-standard) {
+    padding: 0 29%;
+  }
+
+  @include responsive(tablet-landscape) {
+    padding: 0 20%;
+  }
+
+  @include responsive(tablet-portrait) {
+    padding: 0 15%;
+  }
+
+  @include responsive(phone-big) {
+    padding: 0 12%;
+  }
+
+  @include responsive(phone) {
+    padding: 0 16%;
+  }
 }
 
-[class$='heading'] {
+[class$="heading"] {
   display: flex;
   align-items: center;
   margin-bottom: 2.4rem;
 }
 
-[class$='heading--number'] {
-  margin-left: $margin-number;
+[class$="heading--number"] {
+  margin-left: -5rem;
   font-size: 2rem;
   border-bottom: 2px solid $color-dark;
+
+  @include responsive(phone) {
+    margin-left: -4.6rem;
+  }
 }
 
-[class$='heading--text'] {
+[class$="heading--text"] {
   margin-left: 2.6rem;
-  font-size: $font-size-heading;
+  font-size: 2.6rem;
+
+  @include responsive(phone) {
+    font-size: 2.4rem;
+    margin-left: 2.2rem;
+  }
 }
 
 /////////////////////////////////
@@ -64,11 +113,11 @@
   &__heading {
     margin-bottom: 2.8rem;
     &--number {
-      font-size: $font-size-number;
+      font-size: 2.4rem;
     }
 
     &--text {
-      font-size: $font-size-main-heading;
+      font-size: 3.6rem;
     }
   }
 
@@ -79,6 +128,14 @@
   &__buttons {
     display: flex;
     justify-content: space-between;
+
+    @include responsive(phone-big) {
+      flex-direction: column;
+    }
+
+    @include responsive(phone) {
+      flex-direction: column;
+    }
   }
 }
 
@@ -95,7 +152,7 @@
     align-items: center;
 
     &--main {
-      font-size: $font-size-title;
+      font-size: 1.8rem;
     }
 
     &--time {
@@ -114,6 +171,17 @@
 
   &__title {
     margin-bottom: 1.4rem;
+
+    @include responsive(phone-big) {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &--main {
+      @include responsive(phone-big) {
+        margin-bottom: 1rem;
+      }
+    }
 
     &--main .joomla-blue {
       color: $color-joomla;
@@ -145,12 +213,21 @@
 .music,
 .design {
   display: flex;
+  align-items: center;
   margin-bottom: 6rem;
+
+  @include responsive(phone) {
+    flex-direction: column;
+  }
 }
 
 .development,
 .design {
   flex-direction: row-reverse;
+
+  @include responsive(phone) {
+    flex-direction: column;
+  }
 }
 
 /////////////////////////////////
@@ -162,6 +239,20 @@
   display: flex;
   justify-content: center;
   padding: 6rem 14rem 4rem;
+
+  @include responsive(tablet-portrait) {
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem 8rem 4rem;
+  }
+
+  @include responsive(phone-big) {
+    padding: 6rem 4rem 4rem;
+  }
+
+  @include responsive(phone) {
+    padding: 6rem 2rem 4rem;
+  }
 
   &__text {
     margin-right: 6rem;
@@ -185,5 +276,11 @@
   .signature {
     width: 16rem;
     height: 16rem;
+    transition: $transition-transform;
+
+    &:hover,
+    &:focus {
+      transform: $transform-scale;
+    }
   }
 }

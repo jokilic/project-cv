@@ -15,18 +15,43 @@ $color-school: #909090;
 $color-joomla: #00bac0;
 
 $font-size-default: 1.6rem;
-$font-size-title: 1.8rem;
-$font-size-language: 2rem;
-$font-size-number: 2.4rem;
-$font-size-heading: 2.6rem;
-$font-size-main-heading: 3.6rem;
 
 $height-overheader: 6rem;
 
-$padding-section: 0 70rem;
+$transition-transform: transform 0.3s ease-in-out;
 
-$margin-section: 8rem 0;
-$margin-number: -5rem;
+$transform-scale: scale(1.15);
+
+/////////////////////////////////
+// MIXINS
+
+@mixin responsive($resolution) {
+  @if $resolution == phone {
+    @media (max-width: 550px) {
+      @content;
+    }
+  } @else if $resolution == phone-big {
+    @media (max-width: 675px) {
+      @content;
+    }
+  } @else if $resolution == tablet-portrait {
+    @media (max-width: 900px) {
+      @content;
+    }
+  } @else if $resolution == tablet-landscape {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  } @else if $resolution == desktop-standard {
+    @media (max-width: 1800px) {
+      @content;
+    }
+  } @else if $resolution == desktop-big {
+    @media (min-width: 1800px) {
+      @content;
+    }
+  }
+}
 
 /////////////////////////////////
 // GLOBAL RESET
@@ -48,7 +73,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: 'Product Sans', sans-serif;
+  font-family: "Product Sans", sans-serif;
   font-size: $font-size-default;
   color: $color-dark;
   background-color: $oolor-background;
