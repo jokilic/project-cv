@@ -116,9 +116,10 @@ body {
   margin-bottom: 2.4rem; }
 
 [class$="heading--number"] {
+  font-family: "Product Sans Black", sans-serif;
   margin-left: -5rem;
   font-size: 2rem;
-  border-bottom: 2px solid #333333; }
+  border-bottom: 3px solid #333333; }
   @media (max-width: 550px) {
     [class$="heading--number"] {
       margin-left: -4.6rem; } }
@@ -292,12 +293,34 @@ body {
     margin-bottom: 0.6rem; }
 
 .button {
+  font-size: 1.6rem;
+  font-family: "Product Sans", sans-serif;
   border: 2px solid #333333;
   padding: 1.2rem;
   text-decoration: none;
   color: #333333;
   font-weight: bold;
-  text-align: center; }
+  text-align: center;
+  background-color: transparent;
+  position: relative;
+  transition: color 0.3s ease-in-out; }
+  .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #333333;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out; }
+  .button:hover, .button:focus {
+    color: #eeeeee;
+    border: 2px solid #333333; }
+  .button:hover::before, .button:focus::before {
+    transform: scaleX(1); }
   @media (max-width: 675px) {
     .button {
       margin-bottom: 2rem; } }

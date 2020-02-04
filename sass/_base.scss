@@ -15,6 +15,7 @@ $color-school: #909090;
 $color-joomla: #00bac0;
 
 $font-size-default: 1.6rem;
+$font-family: "Product Sans", sans-serif;
 
 $height-overheader: 6rem;
 
@@ -73,7 +74,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: "Product Sans", sans-serif;
+  font-family: $font-family;
   font-size: $font-size-default;
   color: $color-dark;
   background-color: $oolor-background;

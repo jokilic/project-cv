@@ -85,9 +85,10 @@
 }
 
 [class$="heading--number"] {
+  font-family: "Product Sans Black", sans-serif;
   margin-left: -5rem;
   font-size: 2rem;
-  border-bottom: 2px solid $color-dark;
+  border-bottom: 3px solid $color-dark;
 
   @include responsive(phone) {
     margin-left: -4.6rem;

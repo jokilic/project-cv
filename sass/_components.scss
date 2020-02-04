@@ -76,12 +76,42 @@
 // BUTTONS
 
 .button {
+  font-size: 1.6rem;
+  font-family: $font-family;
   border: 2px solid $color-dark;
   padding: 1.2rem;
   text-decoration: none;
   color: $color-dark;
   font-weight: bold;
   text-align: center;
+  background-color: transparent;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: $color-dark;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-light;
+    border: 2px solid $color-dark;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    transform: scaleX(1);
+  }
 
   @include responsive(phone-big) {
     margin-bottom: 2rem;
