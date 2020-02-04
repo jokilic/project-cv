@@ -49,6 +49,7 @@
 
 /////////////////////////////////
 // SECTIONS - GENERAL
+
 .first,
 .second,
 .third,
@@ -78,14 +79,13 @@
   }
 }
 
-[class$="heading"] {
+[class$='heading'] {
   display: flex;
   align-items: center;
   margin-bottom: 2.4rem;
 }
 
-[class$="heading--number"] {
-  font-family: "Product Sans Black", sans-serif;
+[class$='heading--number'] {
   margin-left: -5rem;
   font-size: 2rem;
   border-bottom: 3px solid $color-dark;
@@ -95,7 +95,7 @@
   }
 }
 
-[class$="heading--text"] {
+[class$='heading--text'] {
   margin-left: 2.6rem;
   font-size: 2.6rem;
 
@@ -183,14 +183,17 @@
         margin-bottom: 1rem;
       }
     }
+  }
 
-    &--main .joomla-blue {
-      color: $color-joomla;
-    }
+  .joomla-blue {
+    color: $color-joomla;
+    font-weight: bold;
+    text-decoration: none;
   }
 
   &__content {
     margin-left: 1.6rem;
+    line-height: 1.6;
   }
 }
 

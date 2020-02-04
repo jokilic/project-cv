@@ -67,7 +67,7 @@
   &__text {
     color: $color-light;
     background-color: $color-dark;
-    padding: 0.6rem;
+    padding: 0.6rem 1rem;
     margin-bottom: 0.6rem;
   }
 }
@@ -77,19 +77,17 @@
 
 .button {
   font-size: 1.6rem;
-  font-family: $font-family;
   border: 2px solid $color-dark;
   padding: 1.2rem;
   text-decoration: none;
   color: $color-dark;
   font-weight: bold;
   text-align: center;
-  background-color: transparent;
   position: relative;
   transition: color 0.3s ease-in-out;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     bottom: 0;
@@ -121,12 +119,12 @@
 /////////////////////////////////
 // ICONS
 
-[class$="icon"] {
+[class$='icon'] {
   width: 10.6rem;
   height: 10.6rem;
   border-radius: 50%;
   border: 6px solid $color-dark;
-  padding: 2.4rem;
+  padding: 1.8rem;
   transition: $transition-transform;
 
   &:hover,
