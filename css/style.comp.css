@@ -25,8 +25,12 @@ body {
   font-family: "Product Sans", sans-serif;
   font-size: 1.6rem;
   color: #333333;
-  background-color: #ffe5bd;
+  background-color: #d8bd93;
   line-height: 1.4; }
+
+a {
+  color: #eeeeee;
+  text-decoration: none; }
 
 ::selection {
   background-color: #333333;
@@ -110,25 +114,24 @@ body {
     .fifth {
       padding: 0 16%; } }
 
-[class$="heading"] {
+[class$='heading'] {
   display: flex;
   align-items: center;
   margin-bottom: 2.4rem; }
 
-[class$="heading--number"] {
-  font-family: "Product Sans Black", sans-serif;
+[class$='heading--number'] {
   margin-left: -5rem;
   font-size: 2rem;
   border-bottom: 3px solid #333333; }
   @media (max-width: 550px) {
-    [class$="heading--number"] {
+    [class$='heading--number'] {
       margin-left: -4.6rem; } }
 
-[class$="heading--text"] {
+[class$='heading--text'] {
   margin-left: 2.6rem;
   font-size: 2.6rem; }
   @media (max-width: 550px) {
-    [class$="heading--text"] {
+    [class$='heading--text'] {
       font-size: 2.4rem;
       margin-left: 2.2rem; } }
 
@@ -175,10 +178,13 @@ body {
     @media (max-width: 675px) {
       .work__title--main {
         margin-bottom: 1rem; } }
-    .work__title--main .joomla-blue {
-      color: #00bac0; }
+  .work .joomla-blue {
+    color: #00bac0;
+    font-weight: bold;
+    text-decoration: none; }
   .work__content {
-    margin-left: 1.6rem; }
+    margin-left: 1.6rem;
+    line-height: 1.6; }
 
 .education {
   margin-bottom: 2.6rem; }
@@ -289,23 +295,21 @@ body {
   .header-info__text {
     color: #eeeeee;
     background-color: #333333;
-    padding: 0.6rem;
+    padding: 0.6rem 1rem;
     margin-bottom: 0.6rem; }
 
 .button {
   font-size: 1.6rem;
-  font-family: "Product Sans", sans-serif;
   border: 2px solid #333333;
   padding: 1.2rem;
   text-decoration: none;
   color: #333333;
   font-weight: bold;
   text-align: center;
-  background-color: transparent;
   position: relative;
   transition: color 0.3s ease-in-out; }
   .button::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     bottom: 0;
@@ -325,17 +329,17 @@ body {
     .button {
       margin-bottom: 2rem; } }
 
-[class$="icon"] {
+[class$='icon'] {
   width: 10.6rem;
   height: 10.6rem;
   border-radius: 50%;
   border: 6px solid #333333;
-  padding: 2.4rem;
+  padding: 1.8rem;
   transition: transform 0.3s ease-in-out; }
-  [class$="icon"]:hover, [class$="icon"]:focus {
+  [class$='icon']:hover, [class$='icon']:focus {
     transform: scale(1.15); }
   @media (max-width: 550px) {
-    [class$="icon"] {
+    [class$='icon'] {
       margin-bottom: 2.6rem; } }
 
 .communication__icon,
