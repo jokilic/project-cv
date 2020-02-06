@@ -69,7 +69,7 @@ a {
         padding: 0 6%; } }
     @media (max-width: 550px) {
       .header .main-header {
-        padding: 0 2%; } }
+        padding: 0 4%; } }
 
 .first,
 .second,
@@ -114,24 +114,24 @@ a {
     .fifth {
       padding: 0 16%; } }
 
-[class$='heading'] {
+[class$="heading"] {
   display: flex;
   align-items: center;
   margin-bottom: 2.4rem; }
 
-[class$='heading--number'] {
+[class$="heading--number"] {
   margin-left: -5rem;
   font-size: 2rem;
   border-bottom: 3px solid #333333; }
   @media (max-width: 550px) {
-    [class$='heading--number'] {
+    [class$="heading--number"] {
       margin-left: -4.6rem; } }
 
-[class$='heading--text'] {
+[class$="heading--text"] {
   margin-left: 2.6rem;
   font-size: 2.6rem; }
   @media (max-width: 550px) {
-    [class$='heading--text'] {
+    [class$="heading--text"] {
       font-size: 2.4rem;
       margin-left: 2.2rem; } }
 
@@ -228,11 +228,12 @@ a {
   @media (max-width: 675px) {
     .footer {
       padding: 6rem 4rem 4rem; } }
-  @media (max-width: 550px) {
-    .footer {
-      padding: 6rem 2rem 4rem; } }
   .footer__text {
     margin-right: 6rem; }
+    @media (max-width: 900px) {
+      .footer__text {
+        margin-bottom: 2rem;
+        margin-right: 0; } }
     .footer__text .thanks {
       font-size: 3.6rem;
       margin-bottom: 1.2rem; }
@@ -243,6 +244,7 @@ a {
       text-align: right;
       font-size: 3.2rem; }
   .footer .signature {
+    min-width: 16rem;
     width: 16rem;
     height: 16rem;
     transition: transform 0.3s ease-in-out; }
@@ -309,7 +311,7 @@ a {
   position: relative;
   transition: color 0.3s ease-in-out; }
   .button::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     bottom: 0;
@@ -329,23 +331,32 @@ a {
     .button {
       margin-bottom: 2rem; } }
 
-[class$='icon'] {
+[class$="icon"] {
+  min-width: 10.6rem;
   width: 10.6rem;
   height: 10.6rem;
   border-radius: 50%;
   border: 6px solid #333333;
   padding: 1.8rem;
   transition: transform 0.3s ease-in-out; }
-  [class$='icon']:hover, [class$='icon']:focus {
+  [class$="icon"]:hover, [class$="icon"]:focus {
     transform: scale(1.15); }
   @media (max-width: 550px) {
-    [class$='icon'] {
+    [class$="icon"] {
       margin-bottom: 2.6rem; } }
 
 .communication__icon,
 .music__icon {
   margin-right: 2.6rem; }
+  @media (max-width: 550px) {
+    .communication__icon,
+    .music__icon {
+      margin-right: 0; } }
 
 .development__icon,
 .design__icon {
   margin-left: 2.6rem; }
+  @media (max-width: 550px) {
+    .development__icon,
+    .design__icon {
+      margin-left: 0; } }
