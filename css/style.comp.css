@@ -69,7 +69,7 @@ a {
         padding: 0 6%; } }
     @media (max-width: 550px) {
       .header .main-header {
-        padding: 0 2%; } }
+        padding: 0 4%; } }
 
 .first,
 .second,
@@ -119,7 +119,11 @@ a {
   align-items: center;
   margin-bottom: 2.4rem; }
 
+<<<<<<< HEAD
 [class$='heading--number'] {
+=======
+[class$="heading--number"] {
+>>>>>>> db0b75ae995f1879b7a3638cc47195b09cd3c81e
   margin-left: -5rem;
   font-size: 2rem;
   border-bottom: 3px solid #333333; }
@@ -228,11 +232,12 @@ a {
   @media (max-width: 675px) {
     .footer {
       padding: 6rem 4rem 4rem; } }
-  @media (max-width: 550px) {
-    .footer {
-      padding: 6rem 2rem 4rem; } }
   .footer__text {
     margin-right: 6rem; }
+    @media (max-width: 900px) {
+      .footer__text {
+        margin-bottom: 2rem;
+        margin-right: 0; } }
     .footer__text .thanks {
       font-size: 3.6rem;
       margin-bottom: 1.2rem; }
@@ -243,6 +248,7 @@ a {
       text-align: right;
       font-size: 3.2rem; }
   .footer .signature {
+    min-width: 16rem;
     width: 16rem;
     height: 16rem;
     transition: transform 0.3s ease-in-out; }
@@ -329,7 +335,12 @@ a {
     .button {
       margin-bottom: 2rem; } }
 
+<<<<<<< HEAD
 [class$='icon'] {
+=======
+[class$="icon"] {
+  min-width: 10.6rem;
+>>>>>>> db0b75ae995f1879b7a3638cc47195b09cd3c81e
   width: 10.6rem;
   height: 10.6rem;
   border-radius: 50%;
@@ -345,7 +356,15 @@ a {
 .communication__icon,
 .music__icon {
   margin-right: 2.6rem; }
+  @media (max-width: 550px) {
+    .communication__icon,
+    .music__icon {
+      margin-right: 0; } }
 
 .development__icon,
 .design__icon {
   margin-left: 2.6rem; }
+  @media (max-width: 550px) {
+    .development__icon,
+    .design__icon {
+      margin-left: 0; } }

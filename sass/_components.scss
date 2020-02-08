@@ -87,7 +87,7 @@
   transition: color 0.3s ease-in-out;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     bottom: 0;
@@ -119,7 +119,8 @@
 /////////////////////////////////
 // ICONS
 
-[class$='icon'] {
+[class$="icon"] {
+  min-width: 10.6rem;
   width: 10.6rem;
   height: 10.6rem;
   border-radius: 50%;
@@ -141,6 +142,10 @@
 .music {
   &__icon {
     margin-right: 2.6rem;
+
+    @include responsive(phone) {
+      margin-right: 0;
+    }
   }
 }
 
@@ -148,5 +153,9 @@
 .design {
   &__icon {
     margin-left: 2.6rem;
+
+    @include responsive(phone) {
+      margin-left: 0;
+    }
   }
 }
