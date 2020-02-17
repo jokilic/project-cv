@@ -1,0 +1,61 @@
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+/*-------- THIS IS THE ANIMATIONS SASS FILE --------*/
+/*----------- IT CONTAINS THE ANIMATIONS -----------*/
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+
+/////////////////////////////////
+// DEFINING ANIMATIONS
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/////////////////////////////////
+// CALLING ANIMATIONS
+
+.header {
+  .overheader {
+    @include fadeIn(0.6s);
+  }
+
+  .main-header {
+    .logo {
+      @include fadeIn(0.9s);
+    }
+
+    .header-info {
+      @include fadeIn(1.2s);
+    }
+  }
+}
+
+.first {
+  @include fadeIn(1.5s);
+}
+
+.second {
+  @include fadeIn(1.8s);
+}
+
+.third {
+  @include fadeIn(2.1s);
+}
+
+.fourth {
+  @include fadeIn(2.4s);
+}
+
+.fifth {
+  @include fadeIn(2.7s);
+}
+
+.footer {
+  @include fadeIn(2.7s);
+}

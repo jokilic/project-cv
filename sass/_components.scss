@@ -21,6 +21,15 @@
   &__active {
     border-bottom: 2px solid $color-light;
   }
+
+  &__deepl {
+    font-size: 1rem;
+    font-weight: normal;
+
+    &--link {
+      font-weight: bold;
+    }
+  }
 }
 
 /////////////////////////////////

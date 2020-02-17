@@ -15,7 +15,7 @@ $color-school: #909090;
 $color-joomla: #00bac0;
 
 $font-size-default: 1.6rem;
-$font-family: 'Product Sans', sans-serif;
+$font-family: "Product Sans", sans-serif;
 
 $height-overheader: 6rem;
 
@@ -52,6 +52,12 @@ $transform-scale: scale(1.15);
       @content;
     }
   }
+}
+
+@mixin fadeIn($delay) {
+  opacity: 0;
+  animation: 0.3s ease-out $delay fadeIn;
+  animation-fill-mode: forwards;
 }
 
 /////////////////////////////////
