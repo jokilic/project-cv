@@ -9,42 +9,42 @@
 // HEADER
 
 .header {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 
-  .overheader {
-    height: $height-overheader;
-    background-color: $color-dark;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
+	.overheader {
+		height: $height-overheader;
+		background-color: $color-dark;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
 
-  .main-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 30%;
+	.main-header {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 30%;
 
-    @include responsive(desktop-standard) {
-      padding: 0 24%;
-    }
+		@include responsive(desktop-standard) {
+			padding: 0 24%;
+		}
 
-    @include responsive(tablet-landscape) {
-      padding: 0 14%;
-    }
+		@include responsive(tablet-landscape) {
+			padding: 0 14%;
+		}
 
-    @include responsive(tablet-portrait) {
-      padding: 0 10%;
-    }
+		@include responsive(tablet-portrait) {
+			padding: 0 10%;
+		}
 
-    @include responsive(phone-big) {
-      padding: 0 6%;
-    }
+		@include responsive(phone-big) {
+			padding: 0 6%;
+		}
 
-    @include responsive(phone) {
-      padding: 0 4%;
-    }
-  }
+		@include responsive(phone) {
+			padding: 0 4%;
+		}
+	}
 }
 
 /////////////////////////////////
@@ -55,89 +55,89 @@
 .third,
 .fourth,
 .fifth {
-  padding: 0 32%;
-  margin: 8rem 0;
+	padding: 0 32%;
+	margin: 8rem 0;
 
-  @include responsive(desktop-standard) {
-    padding: 0 29%;
-  }
+	@include responsive(desktop-standard) {
+		padding: 0 29%;
+	}
 
-  @include responsive(tablet-landscape) {
-    padding: 0 20%;
-  }
+	@include responsive(tablet-landscape) {
+		padding: 0 20%;
+	}
 
-  @include responsive(tablet-portrait) {
-    padding: 0 15%;
-  }
+	@include responsive(tablet-portrait) {
+		padding: 0 15%;
+	}
 
-  @include responsive(phone-big) {
-    padding: 0 12%;
-  }
+	@include responsive(phone-big) {
+		padding: 0 12%;
+	}
 
-  @include responsive(phone) {
-    padding: 0 16%;
-  }
+	@include responsive(phone) {
+		padding: 0 16%;
+	}
 }
 
-[class$="heading"] {
-  display: flex;
-  align-items: center;
-  margin-bottom: 2.4rem;
+[class$='heading'] {
+	display: flex;
+	align-items: center;
+	margin-bottom: 2.4rem;
 }
 
-[class$="heading--number"] {
-  margin-left: -5rem;
-  font-size: 2rem;
-  border-bottom: 3px solid $color-dark;
+[class$='heading--number'] {
+	margin-left: -5rem;
+	font-size: 2rem;
+	border-bottom: 3px solid $color-dark;
 
-  @include responsive(phone) {
-    margin-left: -4.6rem;
-  }
+	@include responsive(phone) {
+		margin-left: -4.6rem;
+	}
 }
 
-[class$="heading--text"] {
-  margin-left: 2.6rem;
-  font-size: 2.6rem;
+[class$='heading--text'] {
+	margin-left: 2.6rem;
+	font-size: 2.6rem;
 
-  @include responsive(phone) {
-    font-size: 2.4rem;
-    margin-left: 2.2rem;
-  }
+	@include responsive(phone) {
+		font-size: 2.4rem;
+		margin-left: 2.2rem;
+	}
 }
 
 /////////////////////////////////
 // SECTION ONE - ABOUT ME
 
 .first {
-  margin-top: 1rem;
+	margin-top: 1rem;
 
-  &__heading {
-    margin-bottom: 2.8rem;
-    &--number {
-      font-size: 2.4rem;
-    }
+	&__heading {
+		margin-bottom: 2.8rem;
+		&--number {
+			font-size: 2.4rem;
+		}
 
-    &--text {
-      font-size: 3.6rem;
-    }
-  }
+		&--text {
+			font-size: 3.6rem;
+		}
+	}
 
-  &__content {
-    margin-bottom: 2rem;
-  }
+	&__content {
+		margin-bottom: 2rem;
+	}
 
-  &__buttons {
-    display: flex;
-    justify-content: space-between;
+	&__buttons {
+		display: flex;
+		justify-content: space-between;
 
-    @include responsive(phone-big) {
-      flex-direction: column;
-    }
+		@include responsive(phone-big) {
+			flex-direction: column;
+		}
 
-    @include responsive(phone) {
-      flex-direction: column;
-    }
-  }
+		@include responsive(phone) {
+			flex-direction: column;
+		}
+	}
 }
 
 /////////////////////////////////
@@ -147,19 +147,19 @@
 
 .work,
 .education {
-  &__title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	&__title {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 
-    &--main {
-      font-size: 1.8rem;
-    }
+		&--main {
+			font-size: 1.8rem;
+		}
 
-    &--time {
-      font-weight: bold;
-    }
-  }
+		&--time {
+			font-weight: bold;
+		}
+	}
 }
 
 /////////////////////////////////
@@ -168,45 +168,45 @@
 // WORK EXPERIENCE
 
 .work {
-  margin-bottom: 4rem;
+	margin-bottom: 4rem;
 
-  &__title {
-    margin-bottom: 1.4rem;
+	&__title {
+		margin-bottom: 1.4rem;
 
-    @include responsive(phone-big) {
-      flex-direction: column;
-      text-align: center;
-    }
+		@include responsive(phone-big) {
+			flex-direction: column;
+			text-align: center;
+		}
 
-    &--main {
-      @include responsive(phone-big) {
-        margin-bottom: 1rem;
-      }
-    }
-  }
+		&--main {
+			@include responsive(phone-big) {
+				margin-bottom: 1rem;
+			}
+		}
+	}
 
-  .joomla-blue {
-    color: $color-joomla;
-    font-weight: bold;
-    text-decoration: none;
-  }
+	.joomla-blue {
+		color: $color-joomla;
+		font-weight: bold;
+		text-decoration: none;
+	}
 
-  &__content {
-    margin-left: 1.6rem;
-    line-height: 1.6;
-  }
+	&__content {
+		margin-left: 1.6rem;
+		line-height: 1.6;
+	}
 }
 
 /////////////////////////////////
 // SECTION FOUR - EDUCATION
 
 .education {
-  margin-bottom: 2.6rem;
+	margin-bottom: 2.6rem;
 
-  &__content {
-    color: $color-school;
-    font-weight: bold;
-  }
+	&__content {
+		color: $color-school;
+		font-weight: bold;
+	}
 }
 
 /////////////////////////////////
@@ -216,77 +216,77 @@
 .development,
 .music,
 .design {
-  display: flex;
-  align-items: center;
-  margin-bottom: 6rem;
+	display: flex;
+	align-items: center;
+	margin-bottom: 6rem;
 
-  @include responsive(phone) {
-    flex-direction: column;
-  }
+	@include responsive(phone) {
+		flex-direction: column;
+	}
 }
 
 .development,
 .design {
-  flex-direction: row-reverse;
+	flex-direction: row-reverse;
 
-  @include responsive(phone) {
-    flex-direction: column;
-  }
+	@include responsive(phone) {
+		flex-direction: column;
+	}
 }
 
 /////////////////////////////////
 // FOOTER
 
 .footer {
-  background-color: $color-dark;
-  color: $color-light;
-  display: flex;
-  justify-content: center;
-  padding: 6rem 14rem 4rem;
+	background-color: $color-dark;
+	color: $color-light;
+	display: flex;
+	justify-content: center;
+	padding: 6rem 14rem 4rem;
 
-  @include responsive(tablet-portrait) {
-    flex-direction: column;
-    align-items: center;
-    padding: 6rem 8rem 4rem;
-  }
+	@include responsive(tablet-portrait) {
+		flex-direction: column;
+		align-items: center;
+		padding: 6rem 8rem 4rem;
+	}
 
-  @include responsive(phone-big) {
-    padding: 6rem 4rem 4rem;
-  }
+	@include responsive(phone-big) {
+		padding: 6rem 4rem 4rem;
+	}
 
-  &__text {
-    margin-right: 6rem;
+	&__text {
+		margin-right: 6rem;
 
-    @include responsive(tablet-portrait) {
-      margin-bottom: 2rem;
-      margin-right: 0;
-    }
+		@include responsive(tablet-portrait) {
+			margin-bottom: 2rem;
+			margin-right: 0;
+		}
 
-    .thanks {
-      font-size: 3.6rem;
-      margin-bottom: 1.2rem;
-    }
+		.thanks {
+			font-size: 3.6rem;
+			margin-bottom: 1.2rem;
+		}
 
-    .outro {
-      margin-bottom: 1.4rem;
-    }
+		.outro {
+			margin-bottom: 1.4rem;
+		}
 
-    .bye {
-      margin-top: 1.4rem;
-      text-align: right;
-      font-size: 3.2rem;
-    }
-  }
+		.bye {
+			margin-top: 1.4rem;
+			text-align: right;
+			font-size: 3.2rem;
+		}
+	}
 
-  .signature {
-    min-width: 16rem;
-    width: 16rem;
-    height: 16rem;
-    transition: $transition-transform;
+	.signature {
+		min-width: 16rem;
+		width: 16rem;
+		height: 16rem;
+		transition: $transition-transform;
 
-    &:hover,
-    &:focus {
-      transform: $transform-scale;
-    }
-  }
+		&:hover,
+		&:focus {
+			transform: $transform-scale;
+		}
+	}
 }
