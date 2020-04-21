@@ -24,17 +24,17 @@ body {
   box-sizing: border-box;
   font-family: "Product Sans", sans-serif;
   font-size: 1.6rem;
-  color: #333333;
-  background-color: #d8bd93;
+  color: #151515;
+  background-color: #27786f;
   line-height: 1.4; }
 
 a {
-  color: #eeeeee;
+  color: #f1f1f1;
   text-decoration: none; }
 
 ::selection {
-  background-color: #333333;
-  color: #eeeeee; }
+  background-color: #151515;
+  color: #f1f1f1; }
 
 /*--------------------------------------------------*/
 /*--------------------------------------------------*/
@@ -104,7 +104,7 @@ a {
   flex-direction: column; }
   .header .overheader {
     height: 6rem;
-    background-color: #333333;
+    background-color: #151515;
     display: flex;
     justify-content: flex-end;
     align-items: center; }
@@ -179,7 +179,7 @@ a {
 [class$='heading--number'] {
   margin-left: -5rem;
   font-size: 2rem;
-  border-bottom: 3px solid #333333; }
+  border-bottom: 3px solid #151515; }
   @media (max-width: 550px) {
     [class$='heading--number'] {
       margin-left: -4.6rem; } }
@@ -236,7 +236,7 @@ a {
       .work__title--main {
         margin-bottom: 1rem; } }
   .work .joomla-blue {
-    color: #00bac0;
+    color: #dadada;
     font-weight: bold;
     text-decoration: none; }
   .work__content {
@@ -246,7 +246,7 @@ a {
 .education {
   margin-bottom: 2.6rem; }
   .education__content {
-    color: #909090;
+    color: #dadada;
     font-weight: bold; }
 
 .communication,
@@ -272,8 +272,8 @@ a {
       flex-direction: column; } }
 
 .footer {
-  background-color: #333333;
-  color: #eeeeee;
+  background-color: #151515;
+  color: #f1f1f1;
   display: flex;
   justify-content: center;
   padding: 6rem 14rem 4rem; }
@@ -301,6 +301,7 @@ a {
       text-align: right;
       font-size: 3.2rem; }
   .footer .signature {
+    fill: #f1f1f1;
     min-width: 16rem;
     width: 16rem;
     height: 16rem;
@@ -317,13 +318,13 @@ a {
 .language-switcher {
   margin-right: 6rem;
   margin-bottom: 0.6rem;
-  color: #eeeeee;
+  color: #f1f1f1;
   font-size: 2rem; }
   @media (max-width: 675px) {
     .language-switcher {
       margin-right: 2rem; } }
   .language-switcher__active {
-    border-bottom: 2px solid #eeeeee; }
+    border-bottom: 2px solid #f1f1f1; }
   .language-switcher__deepl {
     font-size: 1rem;
     font-weight: normal; }
@@ -338,7 +339,7 @@ a {
   .logo__primary-text {
     font-size: 7rem;
     font-weight: normal;
-    border: 4px solid #333333;
+    border: 4px solid #151515;
     padding: 0 0.6rem; }
 
 .header-info {
@@ -352,22 +353,22 @@ a {
     width: 13rem;
     height: 13rem;
     margin-bottom: 2rem;
-    border: 0.6rem solid #333333;
+    border: 0.6rem solid #151515;
     transition: transform 0.3s ease-in-out; }
     .header-info__photo:hover, .header-info__photo:focus {
       transform: scale(1.15); }
   .header-info__text {
-    color: #eeeeee;
-    background-color: #333333;
+    color: #f1f1f1;
+    background-color: #151515;
     padding: 0.6rem 1rem;
     margin-bottom: 0.6rem; }
 
 .button {
   font-size: 1.6rem;
-  border: 2px solid #333333;
+  border: 2px solid #151515;
   padding: 1.2rem;
   text-decoration: none;
-  color: #333333;
+  color: #151515;
   font-weight: bold;
   text-align: center;
   position: relative;
@@ -380,13 +381,13 @@ a {
     left: 0;
     right: 0;
     z-index: -1;
-    background-color: #333333;
+    background-color: #151515;
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.3s ease-in-out; }
   .button:hover, .button:focus {
-    color: #eeeeee;
-    border: 2px solid #333333; }
+    color: #f1f1f1;
+    border: 2px solid #151515; }
   .button:hover::before, .button:focus::before {
     transform: scaleX(1); }
   @media (max-width: 675px) {
@@ -394,11 +395,12 @@ a {
       margin-bottom: 2rem; } }
 
 [class$='icon'] {
+  fill: #151515;
   min-width: 10.6rem;
   width: 10.6rem;
   height: 10.6rem;
   border-radius: 50%;
-  border: 6px solid #333333;
+  border: 6px solid #151515;
   padding: 1.8rem;
   transition: transform 0.3s ease-in-out; }
   [class$='icon']:hover, [class$='icon']:focus {
