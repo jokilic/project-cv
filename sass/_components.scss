@@ -148,8 +148,16 @@
 	}
 }
 
+.second [class$='icon'] {
+	padding: 0;
+	border: 0;
+}
+
 .communication,
-.music {
+.music,
+.moderni-alias,
+.zelim-posao,
+.piju-piju {
 	&__icon {
 		margin-right: 2.6rem;
 
@@ -160,7 +168,10 @@
 }
 
 .development,
-.design {
+.design,
+.sunny,
+.veseli-baloni,
+.purrfact {
 	&__icon {
 		margin-left: 2.6rem;
 

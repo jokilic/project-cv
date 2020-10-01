@@ -25,7 +25,7 @@ body {
   font-family: "Product Sans", sans-serif;
   font-size: 1.6rem;
   color: #151515;
-  background-color: #27786f;
+  background-color: #455f5d;
   line-height: 1.4; }
 
 a {
@@ -88,9 +88,14 @@ a {
   animation: 0.3s ease-out 2.7s fadeIn;
   animation-fill-mode: forwards; }
 
+.sixth {
+  opacity: 0;
+  animation: 0.3s ease-out 3s fadeIn;
+  animation-fill-mode: forwards; }
+
 .footer {
   opacity: 0;
-  animation: 0.3s ease-out 2.7s fadeIn;
+  animation: 0.3s ease-out 3.3s fadeIn;
   animation-fill-mode: forwards; }
 
 /*--------------------------------------------------*/
@@ -132,7 +137,8 @@ a {
 .second,
 .third,
 .fourth,
-.fifth {
+.fifth,
+.sixth {
   padding: 0 32%;
   margin: 8rem 0; }
   @media (max-width: 1800px) {
@@ -140,55 +146,60 @@ a {
     .second,
     .third,
     .fourth,
-    .fifth {
+    .fifth,
+    .sixth {
       padding: 0 29%; } }
   @media (max-width: 1200px) {
     .first,
     .second,
     .third,
     .fourth,
-    .fifth {
+    .fifth,
+    .sixth {
       padding: 0 20%; } }
   @media (max-width: 900px) {
     .first,
     .second,
     .third,
     .fourth,
-    .fifth {
+    .fifth,
+    .sixth {
       padding: 0 15%; } }
   @media (max-width: 675px) {
     .first,
     .second,
     .third,
     .fourth,
-    .fifth {
+    .fifth,
+    .sixth {
       padding: 0 12%; } }
   @media (max-width: 550px) {
     .first,
     .second,
     .third,
     .fourth,
-    .fifth {
+    .fifth,
+    .sixth {
       padding: 0 16%; } }
 
-[class$='heading'] {
+[class$="heading"] {
   display: flex;
   align-items: center;
   margin-bottom: 2.4rem; }
 
-[class$='heading--number'] {
+[class$="heading--number"] {
   margin-left: -5rem;
   font-size: 2rem;
   border-bottom: 3px solid #151515; }
   @media (max-width: 550px) {
-    [class$='heading--number'] {
+    [class$="heading--number"] {
       margin-left: -4.6rem; } }
 
-[class$='heading--text'] {
+[class$="heading--text"] {
   margin-left: 2.6rem;
   font-size: 2.6rem; }
   @media (max-width: 550px) {
-    [class$='heading--text'] {
+    [class$="heading--text"] {
       font-size: 2.4rem;
       margin-left: 2.2rem; } }
 
@@ -211,6 +222,50 @@ a {
     @media (max-width: 550px) {
       .first__buttons {
         flex-direction: column; } }
+
+.moderni-alias,
+.sunny,
+.zelim-posao,
+.veseli-baloni,
+.piju-piju,
+.purrfact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6rem; }
+  .moderni-alias__content--title,
+  .sunny__content--title,
+  .zelim-posao__content--title,
+  .veseli-baloni__content--title,
+  .piju-piju__content--title,
+  .purrfact__content--title {
+    font-size: 2rem; }
+    @media (max-width: 550px) {
+      .moderni-alias__content--title,
+      .sunny__content--title,
+      .zelim-posao__content--title,
+      .veseli-baloni__content--title,
+      .piju-piju__content--title,
+      .purrfact__content--title {
+        text-align: center;
+        margin-bottom: 1rem; } }
+  @media (max-width: 550px) {
+    .moderni-alias,
+    .sunny,
+    .zelim-posao,
+    .veseli-baloni,
+    .piju-piju,
+    .purrfact {
+      flex-direction: column; } }
+
+.sunny,
+.veseli-baloni,
+.purrfact {
+  flex-direction: row-reverse; }
+  @media (max-width: 550px) {
+    .sunny,
+    .veseli-baloni,
+    .purrfact {
+      flex-direction: column; } }
 
 .work__title,
 .education__title {
@@ -409,18 +464,34 @@ a {
     [class$='icon'] {
       margin-bottom: 2.6rem; } }
 
+.second [class$='icon'] {
+  padding: 0;
+  border: 0; }
+
 .communication__icon,
-.music__icon {
+.music__icon,
+.moderni-alias__icon,
+.zelim-posao__icon,
+.piju-piju__icon {
   margin-right: 2.6rem; }
   @media (max-width: 550px) {
     .communication__icon,
-    .music__icon {
+    .music__icon,
+    .moderni-alias__icon,
+    .zelim-posao__icon,
+    .piju-piju__icon {
       margin-right: 0; } }
 
 .development__icon,
-.design__icon {
+.design__icon,
+.sunny__icon,
+.veseli-baloni__icon,
+.purrfact__icon {
   margin-left: 2.6rem; }
   @media (max-width: 550px) {
     .development__icon,
-    .design__icon {
+    .design__icon,
+    .sunny__icon,
+    .veseli-baloni__icon,
+    .purrfact__icon {
       margin-left: 0; } }
