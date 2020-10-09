@@ -224,6 +224,7 @@ a {
         flex-direction: column; } }
 
 .moderni-alias,
+.zadatko,
 .sunny,
 .zelim-posao,
 .veseli-baloni,
@@ -233,6 +234,7 @@ a {
   align-items: center;
   margin-bottom: 6rem; }
   .moderni-alias__content--title,
+  .zadatko__content--title,
   .sunny__content--title,
   .zelim-posao__content--title,
   .veseli-baloni__content--title,
@@ -241,6 +243,7 @@ a {
     font-size: 2rem; }
     @media (max-width: 550px) {
       .moderni-alias__content--title,
+      .zadatko__content--title,
       .sunny__content--title,
       .zelim-posao__content--title,
       .veseli-baloni__content--title,
@@ -250,6 +253,7 @@ a {
         margin-bottom: 1rem; } }
   @media (max-width: 550px) {
     .moderni-alias,
+    .zadatko,
     .sunny,
     .zelim-posao,
     .veseli-baloni,
@@ -257,14 +261,14 @@ a {
     .purrfact {
       flex-direction: column; } }
 
-.sunny,
-.veseli-baloni,
-.purrfact {
+.zadatko,
+.zelim-posao,
+.piju-piju {
   flex-direction: row-reverse; }
   @media (max-width: 550px) {
-    .sunny,
-    .veseli-baloni,
-    .purrfact {
+    .zadatko,
+    .zelim-posao,
+    .piju-piju {
       flex-direction: column; } }
 
 .work__title,
@@ -429,7 +433,7 @@ a {
   position: relative;
   transition: color 0.3s ease-in-out; }
   .button::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     bottom: 0;
@@ -449,7 +453,7 @@ a {
     .button {
       margin-bottom: 2rem; } }
 
-[class$='icon'] {
+[class$="icon"] {
   fill: #151515;
   min-width: 10.6rem;
   width: 10.6rem;
@@ -458,40 +462,42 @@ a {
   border: 6px solid #151515;
   padding: 1.8rem;
   transition: transform 0.3s ease-in-out; }
-  [class$='icon']:hover, [class$='icon']:focus {
+  [class$="icon"]:hover, [class$="icon"]:focus {
     transform: scale(1.15); }
   @media (max-width: 550px) {
-    [class$='icon'] {
+    [class$="icon"] {
       margin-bottom: 2.6rem; } }
 
-.second [class$='icon'] {
+.second [class$="icon"] {
   padding: 0;
   border: 0; }
 
 .communication__icon,
 .music__icon,
 .moderni-alias__icon,
-.zelim-posao__icon,
-.piju-piju__icon {
+.sunny__icon,
+.veseli-baloni__icon,
+.purrfact__icon {
   margin-right: 2.6rem; }
   @media (max-width: 550px) {
     .communication__icon,
     .music__icon,
     .moderni-alias__icon,
-    .zelim-posao__icon,
-    .piju-piju__icon {
+    .sunny__icon,
+    .veseli-baloni__icon,
+    .purrfact__icon {
       margin-right: 0; } }
 
 .development__icon,
 .design__icon,
-.sunny__icon,
-.veseli-baloni__icon,
-.purrfact__icon {
+.zadatko__icon,
+.zelim-posao__icon,
+.piju-piju__icon {
   margin-left: 2.6rem; }
   @media (max-width: 550px) {
     .development__icon,
     .design__icon,
-    .sunny__icon,
-    .veseli-baloni__icon,
-    .purrfact__icon {
+    .zadatko__icon,
+    .zelim-posao__icon,
+    .piju-piju__icon {
       margin-left: 0; } }

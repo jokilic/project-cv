@@ -145,6 +145,7 @@
 // SECTION TWO - PROJECTS
 
 .moderni-alias,
+.zadatko,
 .sunny,
 .zelim-posao,
 .veseli-baloni,
@@ -170,9 +171,9 @@
   }
 }
 
-.sunny,
-.veseli-baloni,
-.purrfact {
+.zadatko,
+.zelim-posao,
+.piju-piju {
   flex-direction: row-reverse;
 
   @include responsive(phone) {
