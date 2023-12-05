@@ -8,7 +8,7 @@
 /////////////////////////////////
 // VARIABLES
 
-$oolor-background: #455f5d;
+$oolor-background: #3e5583;
 $color-dark: #151515;
 $color-light: #f1f1f1;
 $color-school: #dadada;
@@ -27,27 +27,37 @@ $transform-scale: scale(1.15);
 // MIXINS
 
 @mixin responsive($resolution) {
-	@if $resolution == phone {
+	@if $resolution ==phone {
 		@media (max-width: 550px) {
 			@content;
 		}
-	} @else if $resolution == phone-big {
+	}
+
+	@else if $resolution ==phone-big {
 		@media (max-width: 675px) {
 			@content;
 		}
-	} @else if $resolution == tablet-portrait {
+	}
+
+	@else if $resolution ==tablet-portrait {
 		@media (max-width: 900px) {
 			@content;
 		}
-	} @else if $resolution == tablet-landscape {
+	}
+
+	@else if $resolution ==tablet-landscape {
 		@media (max-width: 1200px) {
 			@content;
 		}
-	} @else if $resolution == desktop-standard {
+	}
+
+	@else if $resolution ==desktop-standard {
 		@media (max-width: 1800px) {
 			@content;
 		}
-	} @else if $resolution == desktop-big {
+	}
+
+	@else if $resolution ==desktop-big {
 		@media (min-width: 1800px) {
 			@content;
 		}
