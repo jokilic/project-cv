@@ -224,7 +224,10 @@ a {
         flex-direction: column; } }
 
 .moderni-alias,
+.promaja,
 .zadatko,
+.kuharko,
+.moj-mali-dnevnik,
 .sunny,
 .zelim-posao,
 .veseli-baloni,
@@ -234,7 +237,10 @@ a {
   align-items: center;
   margin-bottom: 6rem; }
   .moderni-alias__content--title,
+  .promaja__content--title,
   .zadatko__content--title,
+  .kuharko__content--title,
+  .moj-mali-dnevnik__content--title,
   .sunny__content--title,
   .zelim-posao__content--title,
   .veseli-baloni__content--title,
@@ -243,7 +249,10 @@ a {
     font-size: 2rem; }
     @media (max-width: 550px) {
       .moderni-alias__content--title,
+      .promaja__content--title,
       .zadatko__content--title,
+      .kuharko__content--title,
+      .moj-mali-dnevnik__content--title,
       .sunny__content--title,
       .zelim-posao__content--title,
       .veseli-baloni__content--title,
@@ -253,7 +262,10 @@ a {
         margin-bottom: 1rem; } }
   @media (max-width: 550px) {
     .moderni-alias,
+    .promaja,
     .zadatko,
+    .kuharko,
+    .moj-mali-dnevnik,
     .sunny,
     .zelim-posao,
     .veseli-baloni,
@@ -261,14 +273,18 @@ a {
     .purrfact {
       flex-direction: column; } }
 
-.zadatko,
+.promaja,
+.kuharko,
 .zelim-posao,
-.piju-piju {
+.veseli-baloni,
+.purrfact {
   flex-direction: row-reverse; }
   @media (max-width: 550px) {
-    .zadatko,
+    .promaja,
+    .kuharko,
     .zelim-posao,
-    .piju-piju {
+    .veseli-baloni,
+    .purrfact {
       flex-direction: column; } }
 
 .work__title,
@@ -475,29 +491,35 @@ a {
 .communication__icon,
 .music__icon,
 .moderni-alias__icon,
+.zadatko__icon,
+.moj-mali-dnevnik__icon,
 .sunny__icon,
-.veseli-baloni__icon,
-.purrfact__icon {
+.piju-piju__icon {
   margin-right: 2.6rem; }
   @media (max-width: 550px) {
     .communication__icon,
     .music__icon,
     .moderni-alias__icon,
+    .zadatko__icon,
+    .moj-mali-dnevnik__icon,
     .sunny__icon,
-    .veseli-baloni__icon,
-    .purrfact__icon {
+    .piju-piju__icon {
       margin-right: 0; } }
 
 .development__icon,
 .design__icon,
-.zadatko__icon,
+.promaja__icon,
+.kuharko__icon,
 .zelim-posao__icon,
-.piju-piju__icon {
+.veseli-baloni__icon,
+.purrfact__icon {
   margin-left: 2.6rem; }
   @media (max-width: 550px) {
     .development__icon,
     .design__icon,
-    .zadatko__icon,
+    .promaja__icon,
+    .kuharko__icon,
     .zelim-posao__icon,
-    .piju-piju__icon {
+    .veseli-baloni__icon,
+    .purrfact__icon {
       margin-left: 0; } }

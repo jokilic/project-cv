@@ -114,6 +114,7 @@
 
   &__heading {
     margin-bottom: 2.8rem;
+
     &--number {
       font-size: 2.4rem;
     }
@@ -145,9 +146,10 @@
 // SECTION TWO - PROJECTS
 
 .moderni-alias,
+.promaja,
 .zadatko,
 .kuharko,
-.moj_mali_dnevnik,
+.moj-mali-dnevnik,
 .sunny,
 .zelim-posao,
 .veseli-baloni,
@@ -173,10 +175,11 @@
   }
 }
 
-.zadatko,
-.moj_mali_dnevnik,
+.promaja,
+.kuharko,
 .zelim-posao,
-.piju-piju {
+.veseli-baloni,
+.purrfact {
   flex-direction: row-reverse;
 
   @include responsive(phone) {
