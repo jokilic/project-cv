@@ -279,6 +279,7 @@ a {
 }
 
 .moderni-alias,
+.balun,
 .promaja,
 .zadatko,
 .kuharko,
@@ -294,6 +295,7 @@ a {
 }
 
 .moderni-alias__content--title,
+.balun__content--title,
 .promaja__content--title,
 .zadatko__content--title,
 .kuharko__content--title,
@@ -309,6 +311,7 @@ a {
 @media (max-width: 550px) {
 
     .moderni-alias__content--title,
+    .balun__content--title,
     .promaja__content--title,
     .zadatko__content--title,
     .kuharko__content--title,
@@ -326,6 +329,7 @@ a {
 @media (max-width: 550px) {
 
     .moderni-alias,
+    .balun,
     .promaja,
     .zadatko,
     .kuharko,
@@ -339,21 +343,21 @@ a {
     }
 }
 
-.promaja,
-.kuharko,
-.zelim-posao,
-.veseli-baloni,
-.purrfact {
+.balun,
+.zadatko,
+.moj-mali-dnevnik,
+.sunny,
+.piju-piju {
     flex-direction: row-reverse
 }
 
 @media (max-width: 550px) {
 
-    .promaja,
-    .kuharko,
-    .zelim-posao,
-    .veseli-baloni,
-    .purrfact {
+    .balun,
+    .zadatko,
+    .moj-mali-dnevnik,
+    .sunny,
+    .piju-piju {
         flex-direction: column
     }
 }
@@ -651,10 +655,11 @@ a {
 .communication__icon,
 .music__icon,
 .moderni-alias__icon,
-.zadatko__icon,
-.moj-mali-dnevnik__icon,
-.sunny__icon,
-.piju-piju__icon {
+.promaja__icon,
+.kuharko__icon,
+.zelim-posao__icon,
+.veseli-baloni__icon,
+.purrfact__icon {
     margin-right: 2.6rem
 }
 
@@ -663,21 +668,22 @@ a {
     .communication__icon,
     .music__icon,
     .moderni-alias__icon,
-    .zadatko__icon,
-    .moj-mali-dnevnik__icon,
-    .sunny__icon,
-    .piju-piju__icon {
+    .promaja__icon,
+    .kuharko__icon,
+    .zelim-posao__icon,
+    .veseli-baloni__icon,
+    .purrfact__icon {
         margin-right: 0
     }
 }
 
 .development__icon,
 .design__icon,
-.promaja__icon,
-.kuharko__icon,
-.zelim-posao__icon,
-.veseli-baloni__icon,
-.purrfact__icon {
+.balun__icon,
+.zadatko__icon,
+.moj-mali-dnevnik__icon,
+.sunny__icon,
+.piju-piju__icon {
     margin-left: 2.6rem
 }
 
@@ -685,11 +691,11 @@ a {
 
     .development__icon,
     .design__icon,
-    .promaja__icon,
-    .kuharko__icon,
-    .zelim-posao__icon,
-    .veseli-baloni__icon,
-    .purrfact__icon {
+    .balun__icon,
+    .zadatko__icon,
+    .moj-mali-dnevnik__icon,
+    .sunny__icon,
+    .piju-piju__icon {
         margin-left: 0
     }
 }
