@@ -280,6 +280,7 @@ a {
 
 .moderni-alias,
 .balun,
+.novinarko,
 .promaja,
 .zadatko,
 .kuharko,
@@ -296,6 +297,7 @@ a {
 
 .moderni-alias__content--title,
 .balun__content--title,
+.novinarko__content--title,
 .promaja__content--title,
 .zadatko__content--title,
 .kuharko__content--title,
@@ -312,6 +314,7 @@ a {
 
     .moderni-alias__content--title,
     .balun__content--title,
+    .novinarko__content--title,
     .promaja__content--title,
     .zadatko__content--title,
     .kuharko__content--title,
@@ -330,6 +333,7 @@ a {
 
     .moderni-alias,
     .balun,
+    .novinarko,
     .promaja,
     .zadatko,
     .kuharko,
@@ -344,20 +348,22 @@ a {
 }
 
 .balun,
-.zadatko,
-.moj-mali-dnevnik,
-.sunny,
-.piju-piju {
+.promaja,
+.kuharko,
+.zelim-posao,
+.veseli-baloni,
+.purrfact {
     flex-direction: row-reverse
 }
 
 @media (max-width: 550px) {
 
     .balun,
-    .zadatko,
-    .moj-mali-dnevnik,
-    .sunny,
-    .piju-piju {
+    .promaja,
+    .kuharko,
+    .zelim-posao,
+    .veseli-baloni,
+    .purrfact {
         flex-direction: column
     }
 }
@@ -655,11 +661,11 @@ a {
 .communication__icon,
 .music__icon,
 .moderni-alias__icon,
-.promaja__icon,
-.kuharko__icon,
-.zelim-posao__icon,
-.veseli-baloni__icon,
-.purrfact__icon {
+.novinarko__icon,
+.zadatko__icon,
+.moj-mali-dnevnik__icon,
+.sunny__icon,
+.piju-piju__icon {
     margin-right: 2.6rem
 }
 
@@ -668,11 +674,11 @@ a {
     .communication__icon,
     .music__icon,
     .moderni-alias__icon,
-    .promaja__icon,
-    .kuharko__icon,
-    .zelim-posao__icon,
-    .veseli-baloni__icon,
-    .purrfact__icon {
+    .novinarko__icon,
+    .zadatko__icon,
+    .moj-mali-dnevnik__icon,
+    .sunny__icon,
+    .piju-piju__icon {
         margin-right: 0
     }
 }
@@ -680,10 +686,11 @@ a {
 .development__icon,
 .design__icon,
 .balun__icon,
-.zadatko__icon,
-.moj-mali-dnevnik__icon,
-.sunny__icon,
-.piju-piju__icon {
+.promaja__icon,
+.kuharko__icon,
+.zelim-posao__icon,
+.veseli-baloni__icon,
+.purrfact__icon {
     margin-left: 2.6rem
 }
 
@@ -692,10 +699,11 @@ a {
     .development__icon,
     .design__icon,
     .balun__icon,
-    .zadatko__icon,
-    .moj-mali-dnevnik__icon,
-    .sunny__icon,
-    .piju-piju__icon {
+    .promaja__icon,
+    .kuharko__icon,
+    .zelim-posao__icon,
+    .veseli-baloni__icon,
+    .purrfact__icon {
         margin-left: 0
     }
 }
